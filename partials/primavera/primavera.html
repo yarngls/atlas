@@ -1,0 +1,42 @@
+
+<div>
+	<span style='margin-left:10vw;'><img src="img/primavera.png"></span> 
+</div>
+<div class="form-group"  id="area_pesquisa" style="margin-left:28vw; color:black;"> 
+		<table style="color:black;">
+			<tbody>
+				<tr>
+					<td>
+						<select ng-model="pesquisar.mes" style="margin-top:2vh;">
+							<option ng-repeat='mes in meses' value="{{mes.ind}}">
+								{{mes.mes}}								
+							</option>
+						</select>
+					</td>
+					<td>
+						<select ng-model="pesquisar.ano" style="margin-top:2vh;">
+						  <option>2016</option>
+						  <option>2017</option>
+						  <option>2018</option>
+						  <option>2019</option>
+						  <option>2020</option>
+						  <option>2021</option>
+						  <option>2022</option>
+						  <option>2023</option>
+						  <option>2024</option>
+						  <option>2025</option>
+						  <option>2026</option>
+						  <option>2027</option>
+						  <option>2028</option>
+						  <option>2029</option>
+						  <option>2030</option>
+						</select>
+					</td>
+					<td>
+						<button class="" ng-click="gerarFilePrimavera()" style="margin-top:2vh;" type="button"><i class="fa fa-check"></i></button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div>

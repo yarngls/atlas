@@ -1,0 +1,79 @@
+<div ng-controller='folhaPresencaController'>
+	
+
+	<div class="form-group"  id="area_pesquisa" style="margin-left:0.2vw; color:black;"> 
+		<table style="color:black;">
+			<tbody>
+				<tr>
+					<td>
+						<select ng-model="pesquisar.dia" style="margin-top:2vh;">
+							<option ng-repeat='dia in dias' value="{{dia.dia}}">
+								{{dia.dia}}								
+							</option>
+						</select>
+					</td>
+					<td>
+						<select ng-model="pesquisar.mes" style="margin-top:2vh;">
+							<option ng-repeat='mes in meses' value="{{mes.ind}}">
+								{{mes.mes}}								
+							</option>
+						</select>
+					</td>
+					<td>
+						<select ng-model="pesquisar.ano" style="margin-top:2vh;">
+						  <option>2016</option>
+						  <option>2017</option>
+						  <option>2018</option>
+						  <option>2019</option>
+						  <option>2020</option>
+						  <option>2021</option>
+						  <option>2022</option>
+						  <option>2023</option>
+						  <option>2024</option>
+						  <option>2025</option>
+						  <option>2026</option>
+						  <option>2027</option>
+						  <option>2028</option>
+						  <option>2029</option>
+						  <option>2030</option>
+						</select>
+					</td>
+					<td>
+						<button class="" ng-click="search(searchDia=true)" style="margin-top:2vh;" type="button"><i class="fa fa-check"></i></button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div>
+			
+	</div>	
+	<div>
+		<h4>{{funcionario.nome_funcionario}}</h4>
+		<table id="datatable1" class="table table-hover" style="font-size: 12; margin-top:6vh; color:black;" >
+	      	<thead>
+	        	<tr>           
+		           
+		            <th>Nome Funcionario</th>           
+		            <th>Data Registo</th>           
+		            <th>Entrada no Trabalho</th>
+		            <th>Saida para o Intervalo</th>
+		            <th>Regresso do Intervalo</th>
+		            <th>Saida do Trabalho</th>
+		            <th>Total Hora/Dia</th>
+		            
+	        	</tr>
+	        </thead>
+	        <tbody>
+	        	<tr ng-repeat='func in funcionario_pesq'>
+		        	<td>{{func.diasemana}}</td>           
+		        	<td>{{func.entrada_trabalho}}</td>           
+		        	<td>{{func.saida_almoco}}</td>           
+		        	<td>{{func.entrada_almoco}}</td>           
+		        	<td>{{func.sair_trabalho}}</td>           
+		        	<td>{{func.total_hora_dia}}</td>
+	        	</tr>
+	        </tbody>    
+		</table> 
+	</div>
+</div>

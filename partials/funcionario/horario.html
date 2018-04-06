@@ -1,0 +1,50 @@
+<div ng-controller='horario_funcionarioController'>
+	
+	<div class="form-group" style="align:center" id='relatorio_hora_mensal'>
+        <div id="dados_categoria" class="tab-content" style="margin-top:4vh;">
+            <div class="wrapper wrapper-content animated fadeInRight">
+        		<div class="row">
+                	<div class="col-lg-12" id='ver_horario' style="font-size:12">                 
+                 		<div class="col-lg-12">
+                        	<div class="widget-head-color-box navy-bg p-lg text-left">
+                            	<div class="m-b-md">
+                            
+		                            <h2 class="">
+		                              Horario
+		                            </h2>
+                               
+                            	</div>
+                          		<div class="m-t-xs font-bold" style="width:18vw; margin-left:-1vw;">
+                                    <a data-toggle="dropdown" class="dropdown-toggle" href="#" ><span class="clear"> <span class="block m-t-xs"> <strong class="font-bold"></strong></span> <span class="text-muted text-xs block"><img class="img-circle circle-border m-b-md"  style="height:16vh;" src="img/perfil.jpg"> <b class="caret" style='color:none;'></b></span> </span> </a>
+                                    
+                                </div>
+                                <table class='table' style="border:2;">
+                                    <thead>
+                                        <tr style="color:white;">
+                                            </td><td><h5>Segunda</h5></td><td><h5>Terça</h5></td><td><h5>Quarta</h5></td><td><h5>Quinta</h5></td><td><h5>Sexta</h5></td><td><h5>Sabado</h5></td><td><h5>Domingo</h5></td>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    	<tr>
+                                    		<td><span>{{funcionario_horario.segunda}}</span></td>
+                                    		<td><span>{{funcionario_horario.terca}}</span></td>
+                                    		<td><span>{{funcionario_horario.quarta}}</span></td>
+                                    		<td><span>{{funcionario_horario.quinta}}</span></td>
+                                    		<td><span>{{funcionario_horario.sexta}}</span></td>
+                                            <td><span>{{funcionario_horario.sabado}}</span></td>                                           
+                                    		<td><span>{{funcionario_horario.domingo}}</span></td>
+                                    	</tr>
+                                    	
+                                    </tbody>
+                                        
+                                </table>   
+
+                       		</div>                        
+                		</div>
+                	</div>
+        		</div>
+    		</div>
+    	</div>
+    </div>	
+</div>

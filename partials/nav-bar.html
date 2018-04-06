@@ -1,0 +1,29 @@
+<nav class="navbar-default navbar-static-side" role="navigation" ng-controller='homeController'>
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element"> <span>                  
+                     </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle">
+                    <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">ANAS</strong>
+                     </span> <span class="text-muted text-xs block">RH + Primavera <b class="caret"></b></span> </span> </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a>Profile</a></li>
+                        <li><a>Contacts</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#/" ng-click="logout()" >Logout</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    IN+
+                </div>
+            </li>
+
+            <li>
+                <a href="#/home"><i class="fa fa-user"></i> <span class="nav-label">MAP</span></a>
+                 <a href="#/table"><i class="fa fa-user"></i> <span class="nav-label">TABLE</span></a>
+            </li> 
+          
+        </ul>
+    </div>
+</nav>
